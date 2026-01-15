@@ -1,0 +1,181 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Content Container */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+/* Decade Section */
+.decade {
+    background: white;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #667eea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.decade:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Decade Paragraphs */
+.decade p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    color: #444;
+    text-align: justify;
+}
+
+.decade p:last-child {
+    margin-bottom: 0;
+}
+
+/* Lists within decades */
+.decade ul {
+    margin: 15px 0 15px 30px;
+}
+
+.decade li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.decade ul ul {
+    margin-top: 8px;
+}
+
+/* Bold text */
+bold {
+    font-weight: 600;
+    color: #764ba2;
+}
+
+/* Add decade titles with CSS counters or manual styling */
+.decade:nth-child(1)::before {
+    content: "1960-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(2)::before {
+    content: "1970-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(3)::before {
+    content: "1980-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(4)::before {
+    content: "1990-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(5)::before {
+    content: "2000-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(6)::before {
+    content: "2010-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+.decade:nth-child(7)::before {
+    content: "2020-talet";
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .decade {
+        padding: 25px;
+    }
+    
+    .decade::before {
+        font-size: 1.5rem;
+    }
+    
+    .decade p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
